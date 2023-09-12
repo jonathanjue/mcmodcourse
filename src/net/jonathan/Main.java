@@ -4,10 +4,165 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        Scanner myscanner = new Scanner(System.in);
 
+
+        String[] questions = new String[5];
+        questions[0] = "what do you need to craft a sticks";
+        questions[1] = "what do you need to go up a block without jumping";
+        questions[2] = "what is the level do you need for max enchantes";
+        questions[3] = "how many bookshelfs do you need for max enchanting setup";
+        questions[4] = "how many creepers do you need for tnt";
+
+        String[] correctAnswers = new String[5];
+        correctAnswers[0] = "2 planks";
+        correctAnswers[1] = "slab";
+        correctAnswers[2] = "level 30";
+        correctAnswers[3] = "15";
+        correctAnswers[4] = "4";
+String[] usersAnswers = new String[5];
+        for (int i = 0; i < 5; i++) {
+            //ask the question
+            System.out.println(questions[i]);
+            //get the users answer
+            usersAnswers[i] = myscanner.nextLine();
+            //compare the users answer to the correct Answers
+            if (correctAnswers [i].equals(usersAnswers[i])) {
+                System.out.println("Correct");
+            } else {
+                System.out.println("wrong");
+            }
+        }
+
+    }
 
 }
-    }
+
+//        /* METHODS */
+//
+//        String[] que = new String[3];
+//        que[0] = "How many States does the USA have?";
+//        que[1] = "What is the Capital of the United Kingdom";
+//        que[2] = "What is the chemical symbol for Iron";
+//
+//        String[] ans = new String[3];
+//        ans[0] = "50";
+//        ans[1] = "London";
+//        ans[2] = "Fe";
+//
+//    outputQuestionsAndAnswers(que, ans);
+//    System.out.println(sum(10 , 12));
+//    }
+//
+//    public  static  void  outputQuestionsAndAnswers(String[] que, String[] ans) {
+//        for(int i = 0; i < que.length; i++) {
+//            System.out.println(que[i]);
+//            System.out.println(ans[i]);
+//        }
+//    }
+//    public static int sum(int x, int y) {
+//        return x + y;
+//    }
+//
+//
+//
+//
+//}
+//        String[] questions = new String[3];
+//        questions[0] = "How many States does the USA have?";
+//        questions[1] = "What is the Capital of the United Kingdom";
+//        questions[2] = "What is the chemical symbol for Iron";
+//
+//        String[] answers = new String[3];
+//        answers[0] = "50";
+//        answers[1] = "London";
+//        answers[2] = "Fe";
+//
+//        for(int i = 0; i < 100; i++) {
+//            System.out.println(i);
+//        }
+//
+//        for(int i = 0; i < questions.length; i++) {
+//            System.out.println(questions[i]);
+//            System.out.println(answers[i]);
+//        }
+//
+//        // foreach
+//        for(String question : questions) {
+//            System.out.println(question);
+//        }
+//
+//        Scanner scanner = new Scanner(System.in);
+//
+//        // While loop AND endless!
+//        while(true) {
+//            System.out.println("Do you want to continue?");
+//            if(scanner.next().equals("yes")) {
+//                continue;
+//            } else {
+//                break;
+//            }
+//        }
+//    }
+//}
+//
+//
+//        String question1 = "How many states dose the USA have";
+//        String question2 = "what is the Capital of the United Kingdom";
+//        String question3 = "What is the chemical symbol for Iron";
+//
+//        String answer1 = "50";
+//        String answer2 = "London";
+//        String answer3 = "Fe";
+//
+//        String[] questions = new String[3];
+//        questions[0] = "How many States does the USA have?";
+//        questions[1] = "What is the Capital of the United Kingdom";
+//        questions[2] = "What is the chemical symbol for Iron";
+//
+//        String[] answers = new String[3];
+//        answers[0] = "50";
+//        answers[1] = "London";
+//        answers[2] = "Fe";
+//
+//        System.out.println(questions[1]);
+//        System.out.println(answers[1]);
+//
+//        questions[0] = "How old is Ewan McGregor (in 2021)?";
+//        System.out.println(questions[0]);
+//        System.out.println(answers[0]);
+//
+//        System.out.println(questions.length);
+//
+//
+//    }
+//}
+//
+//
+//        int exam = 65;
+//        int gift = 0;
+//
+//          if(exam >= 50) {
+//              gift = 10;
+//          } else {
+//              gift = 0;
+//          }
+//          System.out.println(gift);
+//
+//          gift = exam >= 50 ? 10 : 0;
+//          System.out.println(gift);
+//
+//    }
+//}
+//        int loan = 750;
+//        float interestRate = 0.0525f ;
+//
+//        float interest = loan * interestRate;
+//        System.out.println(interest);
+//
+//
+//    }
+//}
 //
 //
 //        int score = 0;
@@ -64,13 +219,13 @@ public class Main {
 //                    case 1: System.out.println("GOLD MEDAL"); break;
 //                    case 2: System.out.println("SILVER MEDAL"); break;
 //                    case 3: System.out.println("BRONZE MEDAL"); break;
-//                    default: System.out.println("NO MEDAL"); break;
-//            }
-//        }
-//}
+//                      default: System.out.println("NO MEDAL"); break;
+//              }
+//          }
+//  }
 //
 //
-//            int exam1 = 65;
+//              int exam1 = 65;
 //
 //                Scanner scanner = new Scanner((System.in));
 //                System.out.println("Results for Exam !:  ");
