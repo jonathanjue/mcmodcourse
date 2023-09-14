@@ -1,42 +1,150 @@
 package net.jonathan;
 
-import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
-        Scanner myscanner = new Scanner(System.in);
+        /* Access Modifiers */
 
+        // used the default constructor
+        Dog doggo = new Dog();
+        System.out.println(doggo.name);
 
-        String[] questions = new String[5];
-        questions[0] = "what do you need to craft a sticks";
-        questions[1] = "what do you need to go up a block without jumping";
-        questions[2] = "what is the level do you need for max enchantes";
-        questions[3] = "how many bookshelfs do you need for max enchanting setup";
-        questions[4] = "how many creepers do you need for tnt";
+        Dog bengie = new Dog("bengie.png", "Bengie", 7);
+        System.out.println(bengie.name);
+        System.out.println(bengie.getAge());
 
-        String[] correctAnswers = new String[5];
-        correctAnswers[0] = "2 planks";
-        correctAnswers[1] = "slab";
-        correctAnswers[2] = "level 30";
-        correctAnswers[3] = "15";
-        correctAnswers[4] = "4";
-String[] usersAnswers = new String[5];
-        for (int i = 0; i < 5; i++) {
-            //ask the question
-            System.out.println(questions[i]);
-            //get the users answer
-            usersAnswers[i] = myscanner.nextLine();
-            //compare the users answer to the correct Answers
-            if (correctAnswers [i].equals(usersAnswers[i])) {
-                System.out.println("Correct");
-            } else {
-                System.out.println("wrong");
-            }
-        }
+        Dog gracie = new Dog("gracie.png", "Gracie", 5);
+        System.out.println(gracie.name);
+        System.out.println(gracie.getAge());
 
+        bengie.woof();
+        gracie.woof();
+
+        // DOESN'T WORK!
+        // bengie.getAge() = 10;
+        System.out.println(bengie.getAgeInHumanYears());
     }
-
 }
+//    Dog doggo = new Dog();
+//    System.out.println(doggo.name);
+//
+//
+//        Dog bengie = new Dog("bengie.png", "Bengie", 7);
+//        System.out.println(bengie.name);
+//        System.out.println(bengie.age);
+//
+//        Dog gracie = new Dog("gracie.png","Gracie",5);
+//        System.out.println(gracie.name);
+//        System.out.println(gracie.age);
+//
+//        bengie.woof();
+//        gracie.woof();
+//
+//        bengie.age = 10;
+//        System.out.println(bengie.age);
+//    }
+//}
+//        String[] questions = new String[2];
+//        questions[0] = "how many states dose the USA hava";
+//        questions[1] = "Capital of UK";
+//
+//
+//        List<String> questionsList = new ArrayList<>();
+//        questionsList.add(("what Language is spoken in Germany"));
+//        questionsList.add(("what is the capital of Canada"));
+//        questionsList.add(("In what hemisphere is in brazil"));
+//
+//
+//        questionsList.remove(1);
+//
+//        System.out.println(questionsList.size());
+//        System.out.println(questionsList.get(0));
+//
+//
+//
+//        List<Integer> numbers = new ArrayList<>();
+//        numbers.add(420);
+//        numbers.add(42);
+//
+//
+//
+//
+//
+//      Map<String, String> countryToCapital = new HashMap<>();
+//      countryToCapital.put("Germany", "Berlin");
+//      countryToCapital.put("France", "Paris");
+//      countryToCapital.put("Italy", "Rome");
+//      countryToCapital.put("USA", "Washington DC");
+//
+//
+//
+//
+//      System.out.println(countryToCapital.get("Germany"));
+//
+//
+//      System.out.println("Contains Key 'Germany'? " + countryToCapital.containsKey("Germany"));
+//      System.out.println("Contains Value 'London'? " + countryToCapital.containsValue("London"));
+//
+//      System.out.println(countryToCapital.remove("France"));
+//
+//
+//
+//
+//        Set<String> usernames = new HashSet<>();
+//        usernames.add("Kaupenjoe");
+//        usernames.add("Nanoattack");
+//
+//        System.out.println(usernames.add("FRV"));
+//        System.out.println(usernames.add("FRV"));
+//
+
+// ERRORS YOU MIGHT RUN INTO
+// Uncomment for errors
+
+// IndexOutOfBoundException
+// If you try and pass in an Index that does not exist for a list
+// System.out.println(questionList.get(2));
+
+// Not an Exception, BUT "null"
+// If you pass in a Key into a Map that does not exist
+// Your return value is going to be null (might lead to other errors down the line!)
+// System.out.println(countryToCapital.get("Malta"));
+//    }
+//}
+
+
+//        Scanner myscanner = new Scanner(System.in);
+//
+//
+//        String[] questions = new String[5];
+//        questions[0] = "what do you need to craft a sticks";
+//        questions[1] = "what do you need to go up a block without jumping";
+//        questions[2] = "what is the level do you need for max enchantes";
+//        questions[3] = "how many bookshelfs do you need for max enchanting setup";
+//        questions[4] = "how many creepers do you need for tnt";
+//
+//        String[] correctAnswers = new String[5];
+//        correctAnswers[0] = "2 planks";
+//        correctAnswers[1] = "slab";
+//        correctAnswers[2] = "level 30";
+//        correctAnswers[3] = "15";
+//        correctAnswers[4] = "4";
+//String[] usersAnswers = new String[5];
+//        for (int i = 0; i < 5; i++) {
+//            //ask the question
+//            System.out.println(questions[i]);
+//            //get the users answer
+//            usersAnswers[i] = myscanner.nextLine();
+//            //compare the users answer to the correct Answers
+//            if (correctAnswers [i].equals(usersAnswers[i])) {
+//                System.out.println("Correct");
+//            } else {
+//                System.out.println("wrong");
+//            }
+//        }
+//
+//    }
+//
+//}
 
 //        /* METHODS */
 //
